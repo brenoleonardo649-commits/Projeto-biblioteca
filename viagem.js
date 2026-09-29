@@ -29,7 +29,11 @@ console.log("0. Sair")
     let despesas = prompt("Qual o custo das despesas?")
     let quantasPessoas = prompt("Número de pessoas")
     let divisaoDeDespesas = despesas / quantasPessoas
-    console.log(`Cada pessoa paga:R$ ${divisaoDeDespesas}`)
+  
+    if(quantasPessoas > 0)
+         console.log(`Cada pessoa paga:R$ ${divisaoDeDespesas}`)
+        else 
+            console.log(`o numero de pessoas precisa ser maior que zero`)
     break
     case"4":
     let ValorEmReais = prompt("Qual o Valor em reais")
